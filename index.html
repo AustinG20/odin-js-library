@@ -4,10 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    
+    <div class="sidebar">
+        <form class="form">
+            <p class="legend">New Book?</p>
+            <p class="item">
+                <label for="title">
+                    <span>Book Title</span>
+                </label>
+                <input type="text" id="title" name="title"/>
+            </p>
+            <p class="item">
+                <label for="author">
+                    <span>Book Author</span>
+                </label>
+                <input type="text" id="author" name="author"/>
+            </p>
+            <p class="item">
+                <label for="pages">
+                    <span># Of Pages</span>
+                </label>
+                <input type="text" id="pages" name="pages"/>
+            </p>
+        </form>
+    </div>
+    <div>
+        <table id="library">
+            <th>ID</th>
+            <th>Book Name</th>
+            <th>Author</th>
+            <th># Pages</th>
+        </table>
+    </div>
 </body>
 </html>
