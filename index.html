@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="sidebar">
-        <form class="form">
+        <form id="form">
             <p class="legend">New Book?</p>
             <p class="item">
                 <label for="title">
@@ -29,14 +29,19 @@
                 </label>
                 <input type="text" id="pages" name="pages"/>
             </p>
+            <p>
+                <button type="submit" id="submitButton">Add Book!</button>
+            </p>
         </form>
     </div>
     <div>
         <table id="library">
-            <th>ID</th>
-            <th>Book Name</th>
-            <th>Author</th>
-            <th># Pages</th>
+            <tr>
+                <th>ID</th>
+                <th>Book Name</th>
+                <th>Author</th>
+                <th># Pages</th>
+            </tr>
         </table>
     </div>
 </body>
