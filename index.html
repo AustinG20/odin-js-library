@@ -8,47 +8,50 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="sidebar">
-        <form id="form">
-            <p class="legend">New Book?</p>
-            <p class="item">
-                <label for="title">
-                    <span>Book Title</span>
-                </label>
-                <input type="text" id="title" name="title"/>
-            </p>
-            <p class="item">
-                <label for="author">
-                    <span>Book Author</span>
-                </label>
-                <input type="text" id="author" name="author"/>
-            </p>
-            <p class="item">
-                <label for="pages">
-                    <span># Of Pages</span>
-                </label>
-                <input type="text" id="pages" name="pages"/>
-            </p>
-            <p class="item">
-                <label for="read">
-                    <span>Already Read? (Y/N)</span>
-                </label>
-                <input type="text" id="read" name="read"/>
-            </p>
-            <p>
-                <button type="submit" id="submitButton">Add Book!</button>
-            </p>
-        </form>
-    </div>
-    <div>
-        <table id="library">
-            <tr>
-                <th>ID</th>
-                <th>Book Name</th>
-                <th>Author</th>
-                <th># Pages</th>
-            </tr>
-        </table>
+    <div class="container">
+        <div class="sidebar">
+            <form id="form">
+                <h2 class="legend">New Book?</h2>
+                <p class="item">
+                    <label for="title">
+                        <span>Book Title</span>
+                    </label>
+                    <input type="text" id="title" name="title"/>
+                </p>
+                <p class="item">
+                    <label for="author">
+                        <span>Book Author</span>
+                    </label>
+                    <input type="text" id="author" name="author"/>
+                </p>
+                <p class="item">
+                    <label for="pages">
+                        <span># Of Pages</span>
+                    </label>
+                    <input type="text" id="pages" name="pages"/>
+                </p>
+                <p class="item">
+                    <label for="read">
+                        <span>Already Read? (Y/N)</span>
+                    </label>
+                    <input type="text" id="read" name="read"/>
+                </p>
+                <p class="item">
+                    <button type="submit" id="submitButton">Add Book!</button>
+                </p>
+            </form>
+        </div>
+        <div class="table">
+            <h2>My Library</h2>
+            <table id="library">
+                <tr>
+                    <th>ID</th>
+                    <th>Book Name</th>
+                    <th>Author</th>
+                    <th># Pages</th>
+                </tr>
+            </table>
+        </div>
     </div>
 </body>
 </html>
